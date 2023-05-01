@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Wi-Fi Angel</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img
+                    src="https://github.com/davidroygsu/SEstuff/blob/main/wifiangel.png?raw=true" height="40"> Wi-Fi
+                Angel</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="buyerboard.html">Buyer Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="sellerboard.html">Seller Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">AngelMap</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link login" href="#">Already have an account? Log in.</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="cardganize">
+        <div class="card text-white bg-info mb-3 text-center" style="max-width: 18rem;">
+            <div class="card-header">Sales</div>
+            <div class="card-body">
+                <img src="https://icons.getbootstrap.com/assets/icons/currency-dollar.svg"
+                    class="cardicon center dollar">
+                <h5 class="card-title">3,973</h5>
+            </div>
+        </div>
+        <div class="card text-white bg-danger mb-3 text-center" style="max-width: 18rem;">
+            <div class="card-header">Avg. Sales (per week)</div>
+            <div class="card-body">
+                <img src="https://icons.getbootstrap.com/assets/icons/piggy-bank-fill.svg" class="cardicon piggy center">
+                <h5 class="card-title">3,973</h5>
+            </div>
+        </div>
+        <div class="card text-white bg-primary mb-3 text-center" style="max-width: 18rem;">
+            <div class="card-header">Clicks</div>
+            <div class="card-body">
+                <img src="https://icons.getbootstrap.com/assets/icons/mouse.svg" class="cardicon mouse center">
+                <h5 class="card-title">50,345</h5>
+            </div>
+        </div>
+        <div class="card text-white bg-dark mb-3 text-center" style="max-width: 18rem;">
+            <div class="card-header">New Buyers (past week)</div>
+            <div class="card-body">
+                <img src="https://icons.getbootstrap.com/assets/icons/rocket-takeoff.svg"
+                    class="rocket cardicon center">
+                <h5 class="card-title">178</h5>
+            </div>
+        </div>
+        <form class="form-inline">
+            <div class="form-group mb-2">
+              <label for="staticprice" class="sr-only">Current price/hr:</label>
+              <input type="text" readonly class="form-control-plaintext" id="staticprice" value="$4">
+            </div>
+            <div class="form-group mx-sm-3 mb-2">
+              <label for="inputprice" class="sr-only">New Price</label>
+              <input type="password" class="form-control" id="inputprice" placeholder="New Price">
+            </div>
+            <button type="submit" class="btn btn-primary mb-2">Confirm price change</button>
+          </form>
+    </div>
+    <img src="https://github.com/davidroygsu/SEstuff/raw/main/saleschart.svg" class="center">
+    <script type="module" src="./js/main.js"></script>
+</body>
+
+</html>

@@ -12,10 +12,10 @@ import '../scss/styles.scss';
 export default function SellerRegister() {
 
     let userSchema = object({
-        username: string().required('Username is required.'),
+        username: string().lowercase().required('Username is required.'),
         fName: string().required('First name is required.'),
         lName: string().required('Last name is required.'),
-        email: string().required('Email is required.').email('Must be a valid email.'),
+        email: string().lowercase().required('Email is required.').email('Must be a valid email.'),
         password: string().required('Password is required.'),
         confirmPassword: string().required('Password confirmation is required.').test(
             'passwords-match',
@@ -29,7 +29,7 @@ export default function SellerRegister() {
 
     const { register, handleSubmit, formState: { errors }, reset, watch, control } = useForm({
         resolver: yupResolver(userSchema),
-        defaultValues: { username: "", fName: "", lName: "", email: "", password: "", confirmPassword: "", userType: "seller"}
+        defaultValues: { username: "", fName: "", lName: "", email: "", password: "", confirmPassword: "", userType: "seller" }
     });
     const navigate = useNavigate();
     async function onSubmit(e: any) {
@@ -37,7 +37,7 @@ export default function SellerRegister() {
         // When a post request is sent to the create url, we'll add a new record to the database.
         const newPerson = { ...e };
 
-        await fetch("http://localhost:5000/record/add", {
+        await fetch("http://localhost:5000/user/add", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",

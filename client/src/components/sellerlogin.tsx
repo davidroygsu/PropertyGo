@@ -13,7 +13,7 @@ import '../scss/styles.scss';
 export default function SellerLogin() {
 
     let userSchema = object({
-        email: string().required('Email is required.').email('Must be a valid email.'),
+        email: string().lowercase().required('Email is required.').email('Must be a valid email.'),
         password: string().required('Password is required.'),
         userType: string().required(),
     });
@@ -27,7 +27,7 @@ export default function SellerLogin() {
         const user = { ...e };
 
         try {
-            const response = await fetch("http://localhost:5000/login", {
+            const response = await fetch("http://localhost:5000/sellerlogin", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",

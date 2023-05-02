@@ -15,7 +15,7 @@ export default function Edit() {
    async function fetchData() {
     if (params.id != undefined) {
      const id = params.id.toString();
-     const response: Response = await fetch(`http://localhost:5000/record/${params.id.toString()}`);
+     const response: Response = await fetch(`http://localhost:5000/user/${params.id.toString()}`);
      if (!response.ok) {
        const message = `An error has occurred: ${response.statusText}`;
        window.alert(message);

@@ -14,7 +14,7 @@ export default {
     } catch (err) {
       console.error(err);
     }
-    _db = client.db("users");
+    _db = client.db("propgo");
     return (_db === undefined ? false: true);
   },
 

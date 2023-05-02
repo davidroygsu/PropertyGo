@@ -12,10 +12,10 @@ import '../scss/styles.scss';
 export default function BuyerRegister() {
 
     let userSchema = object({
-        username: string().required('Username is required.'),
+        username: string().lowercase().required('Username is required.'),
         fName: string().required('First name is required.'),
         lName: string().required('Last name is required.'),
-        email: string().required('Email is required.').email('Must be a valid email.'),
+        email: string().lowercase().required('Email is required.').email('Must be a valid email.'),
         password: string().required('Password is required.'),
         confirmPassword: string().required('Password confirmation is required.').test(
             'passwords-match',
@@ -37,7 +37,7 @@ export default function BuyerRegister() {
         // When a post request is sent to the create url, we'll add a new record to the database.
         const newPerson = { ...e };
 
-        await fetch("http://localhost:5000/record/add", {
+        await fetch("http://localhost:5000/user/add", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
@@ -139,7 +139,7 @@ export default function BuyerRegister() {
                         <Button type="submit" variant="contained">Submit</Button>
                     </form>
                 </div>
-                
+                <script type="module" src="./js/main.js"></script>
             </body>
         </>
     );

@@ -139,7 +139,7 @@ export default function BuyerRegister() {
                         <Button type="submit" variant="contained">Submit</Button>
                     </form>
                 </div>
-                <script type="module" src="./js/main.js"></script>
+                
             </body>
         </>
     );

@@ -1,5 +1,9 @@
 // Import all of Bootstrap's CSS
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
+*{
+    
+    font-family: monospace;
+}
 
 .buyerbutton {
     background-color: #d7862b !important;
@@ -10,9 +14,18 @@
     background-color: #27536e !important;
     color: #d7862b !important;
 }
+a{
+    color: white !important;
+}
 
 body {
-    background-image: url("https://images.pexels.com/photos/5356221/pexels-photo-5356221.jpeg?cs=srgb&dl=pexels-roberto-hund-5356221.jpg&fm=jpg&w=6000&h=4000");
+    color: aliceblue ; 
+    background-color: rgb(73, 185, 245);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(" https://th.bing.com/th/id/R.54adbc096e3ebb1241b4a415de9b4ddb?rik=b94czN7bYM8KnQ&pid=ImgRaw&r=0");
+    //https://th.bing.com/th/id/R.54adbc096e3ebb1241b4a415de9b4ddb?rik=b94czN7bYM8KnQ&pid=ImgRaw&r=0
+    //https://go.init.st/images/city_animation.gif
 }
 
 .blur {
@@ -145,3 +158,4 @@ body {
 .calm {
     background-image: none;
 }
+

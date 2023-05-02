@@ -5,6 +5,7 @@ import "bootstrap/dist/css/bootstrap.css";
 
 // We import NavLink to utilize the react router.
 import { NavLink } from "react-router-dom";
+import "../scss/styles.scss";
 
 // Here, we display our Navbar
 export default function Navbar() {
@@ -12,11 +13,13 @@ export default function Navbar() {
     <div className="transparent">
       <nav className="navbar navbar-expand-lg">
         <div className="container-fluid">
-          <a className="navbar-brand" href="#">
+          <a className="navbar-brand" href="#" >
             <img
               src="https://github.com/davidroygsu/SEstuff/blob/main/wifiangel.png?raw=true"
               height="40"
               alt="Wi-Fi Angel logo"
+              
+              
             />
             Wi-Fi Angel
           </a>
@@ -51,6 +54,11 @@ export default function Navbar() {
               <li className="nav-item">
                 <a className="nav-link" href="#">
                   AngelMap
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="/prop1">
+                  Proper
                 </a>
               </li>
               <li className="nav-item">

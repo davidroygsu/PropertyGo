@@ -13,6 +13,9 @@ import SellerRegister from "./components/sellerregister";
 import SellerLogin from "./components/sellerlogin";
 import BuyerLogin from "./components/buyerlogin";
 import BuyerRegister from "./components/buyerregister";
+import Prop1 from "./components/prop1";
+
+
 
 const App = () => {
   return (
@@ -27,6 +30,7 @@ const App = () => {
         <Route path="/sellerlogin" element={<SellerLogin />} />
         <Route path="/buyerlogin" element={<BuyerLogin />} />
         <Route path="/buyerregister" element={<BuyerRegister />} />
+        <Route path="/prop1" element={<Prop1 />} />
       </Routes>
     </div>
   );

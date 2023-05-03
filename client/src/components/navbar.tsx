@@ -52,11 +52,6 @@ export default function Navbar() {
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/prop1">
-                  Proper
-                </a>
-              </li>
-              <li className="nav-item">
                 <a className="nav-link login" href="/buyerlogin">
                   Already have an account? Log in.
                 </a>

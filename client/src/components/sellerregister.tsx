@@ -62,7 +62,7 @@ export default function SellerRegister() {
             </head>
             <body className="text-center calm">
                 <div>
-                    <h1>Seller Registration</h1>
+                    <h1 className="title">Seller Registration</h1>
                     <form onSubmit={handleSubmit(onSubmit)} className="column">
                         <Controller
                             name="fName"

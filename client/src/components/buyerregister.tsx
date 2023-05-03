@@ -51,7 +51,7 @@ export default function BuyerRegister() {
             });
 
         reset()
-        navigate("/");
+        navigate("/buyerlogin");
     }
 
     return (
@@ -62,7 +62,7 @@ export default function BuyerRegister() {
             </head>
             <body className="text-center calm">
                 <div>
-                    <h1>Buyer Registration</h1>
+                    <h1 className="title">Buyer Registration</h1>
                     <form onSubmit={handleSubmit(onSubmit)} className="column">
                         <Controller
                             name="fName"

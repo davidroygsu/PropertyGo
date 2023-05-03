@@ -42,7 +42,7 @@ export default function BuyerLogin() {
             ReactSession.set("userType", e.userType);
             console.log(ReactSession.get("userType"));
             reset();
-            navigate("/");
+            navigate("/buyerdash");
         } catch (error) {
             window.alert(error);
             return;
@@ -52,7 +52,7 @@ export default function BuyerLogin() {
         <>
             <body className="text-center calm">
                 <div>
-                    <h1>Buyer Login</h1>
+                    <h1 className="title">Buyer Login</h1>
                     <form onSubmit={handleSubmit(onSubmit)} className="column">
                         <Controller
                             name="email"

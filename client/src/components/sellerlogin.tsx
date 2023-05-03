@@ -53,7 +53,7 @@ export default function SellerLogin() {
         <>
             <body className="text-center calm">
                 <div>
-                    <h1>Seller Login</h1>
+                    <h1 className="title">Seller Login</h1>
                     <form onSubmit={handleSubmit(onSubmit)} className="column">
                         <Controller
                             name="email"

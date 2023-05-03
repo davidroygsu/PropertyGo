@@ -15,13 +15,13 @@ export default function Navbar() {
         <div className="container-fluid">
           <a className="navbar-brand" href="#" >
             <img
-              src="https://github.com/davidroygsu/SEstuff/blob/main/wifiangel.png?raw=true"
+              src="/src/assets/propertygo.png"
               height="40"
-              alt="Wi-Fi Angel logo"
+              alt="PropertGo logo"
               
               
             />
-            Wi-Fi Angel
+            PropertyGo
           </a>
           <button
             className="navbar-toggler"
@@ -62,7 +62,7 @@ export default function Navbar() {
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link login" href="#">
+                <a className="nav-link login" href="/buyerlogin">
                   Already have an account? Log in.
                 </a>
               </li>

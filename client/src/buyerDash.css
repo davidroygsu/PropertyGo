@@ -1,8 +1,7 @@
-body {
-    background-color:whitesmoke !important; /* do !important to override pre-existing css */
-    background-image: none !important;
+h1
+{
+  color:white;
 }
-
 .cardz {
     margin-top: 10%;
     display: flex;

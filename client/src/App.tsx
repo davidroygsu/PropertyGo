@@ -14,8 +14,9 @@ import SellerLogin from "./components/sellerlogin";
 import BuyerLogin from "./components/buyerlogin";
 import BuyerRegister from "./components/buyerregister";
 import Prop1 from "./components/prop1";
-
-
+import Prop2 from "./components/prop2";
+import Prop3 from "./components/prop3";
+import BuyerDash from "./components/buyerDash";
 
 const App = () => {
   return (
@@ -30,7 +31,11 @@ const App = () => {
         <Route path="/sellerlogin" element={<SellerLogin />} />
         <Route path="/buyerlogin" element={<BuyerLogin />} />
         <Route path="/buyerregister" element={<BuyerRegister />} />
-        <Route path="/prop1" element={<Prop1 />} />
+        <Route path="/buyerDash" element={< BuyerDash /> } />
+        <Route path="/prop1" element={< Prop1 />} />
+        <Route path="/prop2" element={< Prop2 />} />
+        <Route path="/prop3" element={< Prop3 />} />
+
       </Routes>
     </div>
   );

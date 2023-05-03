@@ -1,0 +1,98 @@
+.slideshow-container {
+    position: relative;
+   top: auto;
+   left: 17%;
+  }
+  
+  .slide {
+    position: relative;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.5s;
+  }
+  
+  .slide.active {
+    opacity: 1;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .slider-controls {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+  
+  .slider-controls button {
+    margin: 0 0.5rem;
+    padding: 0.5rem;
+    border: none;
+    background-color: transparent;
+    background: linear-gradient(45deg, (rgba(0, 0, 12, 0.4),rgb(0, 1, 0)));
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .slider-controls button:hover {
+    background-color: #555;
+  }
+  .picturess{
+    
+    max-width: 1000px;
+    
+    
+    vertical-align: middle;
+}
+images{
+    width: 400px;
+}
+.intro{
+    background: linear-gradient(45deg, (rgba(0, 0, 12, 0.4),rgb(0, 1, 0)));
+    background-color: transparent;
+    text-align: center;
+    
+   
+}
+.jumbotron{
+    // background: transparent;
+   
+    // backdrop-filter: blur(20px);
+    
+  background: linear-gradient(45deg, (rgba(0, 0, 12, 0.4),rgb(0, 1, 0)));
+}
+.lefty{
+    float: right;
+    position: relative;
+
+}
+button{
+    background-color: transparent;
+    margin-bottom: 10px;
+    width:200px;
+    height: 40px;
+    border: solid;
+}
+button:hover{
+    background: linear-gradient(45deg, (rgba(0, 0, 12, 0.4),rgb(0, 1, 0)));
+    color: white;
+}
+.info{
+    column-count: 3;
+    
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+th, td {
+  border: none;
+  padding: 8px;
+  text-align: left;
+}
+th {
+  background-color: none;
+  font-weight: bold;
+}

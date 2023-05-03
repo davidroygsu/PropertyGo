@@ -8,6 +8,7 @@ const Record = (props: any) =>
     <td>{props.record.lName}</td>
     <td>{props.record.email}</td>
     <td>{props.record.password}</td>
+    <td>{props.record.userType}</td>
     <td>
       <Link className="btn btn-link" to={`/edit/${props.record._id}`}>Edit</Link> |
       <button className="btn btn-link"
@@ -45,7 +46,7 @@ export default function RecordList() {
 
   // This method will delete a record
   async function deleteRecord(id: any) {
-    await fetch(`http://localhost:5000/${id}`, {
+    await fetch(`http://localhost:5000/user/${id}`, {
       method: "DELETE"
     });
 
@@ -80,6 +81,7 @@ export default function RecordList() {
             <th>Last Name</th>
             <th>Email</th>
             <th>Password</th>
+            <th>User Type</th>
           </tr>
         </thead>
         <tbody>{recordList()}</tbody>

@@ -6,7 +6,6 @@ import { useNavigate } from "react-router";
 import { yupResolver } from '@hookform/resolvers/yup';
 import { object, string } from "yup";
 import { TextField, Button } from "@mui/material";
-import { ReactSession } from 'react-client-session';
 // Import our custom CSS
 import '../scss/styles.scss';
 
@@ -39,9 +38,7 @@ export default function SellerLogin() {
             if (!response.ok) {
                 throw new Error('Credentials do not match');
             }
-
-            ReactSession.set("userType", e.userType);
-            console.log(ReactSession.get("userType"));
+            // TODO: Add session code
             reset();
             navigate("/");
         } catch (error) {

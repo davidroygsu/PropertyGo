@@ -42,18 +42,13 @@ export default function Navbar() {
                 </NavLink>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="buyerboard.html">
+                <a className="nav-link" href="/buyerdash">
                   Buyer Dashboard
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="sellerboard.html">
+                <a className="nav-link" href="/sellerdash">
                   Seller Dashboard
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#">
-                  AngelMap
                 </a>
               </li>
               <li className="nav-item">

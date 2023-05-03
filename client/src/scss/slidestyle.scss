@@ -1,4 +1,4 @@
-.slideshow-container {
+.sliderBox {
     position: relative;
    top: auto;
    left: 17%;
@@ -20,13 +20,13 @@
     align-items: center;
   }
   
-  .slider-controls {
+  .sliderC {
     display: flex;
     justify-content: center;
     margin-top: 1rem;
   }
   
-  .slider-controls button {
+  .sliderC button {
     margin: 0 0.5rem;
     padding: 0.5rem;
     border: none;
@@ -36,7 +36,7 @@
     cursor: pointer;
   }
   
-  .slider-controls button:hover {
+  .sliderC button:hover {
     background-color: #555;
   }
   .picturess{
@@ -82,4 +82,17 @@ button:hover{
 .info{
     column-count: 3;
     
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+th, td {
+  border: none;
+  padding: 8px;
+  text-align: left;
+}
+th {
+  background-color: none;
+  font-weight: bold;
 }

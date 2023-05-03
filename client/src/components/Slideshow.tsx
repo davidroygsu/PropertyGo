@@ -13,22 +13,22 @@ type SlideshowProps = {
 const Slideshow = ({ images }: SlideshowProps) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const handlePrevClick = () => {
+  const prev = () => {
     setCurrentIndex((currentIndex - 1 + images.length) % images.length);
   };
 
-  const handleNextClick = () => {
+  const nextC = () => {
     setCurrentIndex((currentIndex + 1) % images.length);
   };
 
   return (
-    <div className="slideshow-container">
+    <div className="sliderBox">
       <div className="slide active">
         <img width="600px" height="400px" vertical-align="middle" src={images[currentIndex].src} alt={images[currentIndex].alt} />
       </div>
-      <div className="slider-controls">
-        <button onClick={handlePrevClick}>Prev</button>
-        <button onClick={handleNextClick}>Next</button>
+      <div className="sliderC">
+        <button onClick={prev}>Prev</button>
+        <button onClick={nextC}>Next</button>
       </div>
     </div>
   );
